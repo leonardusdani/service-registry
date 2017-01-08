@@ -1,17 +1,14 @@
-server:
-  port: 8761
- 
-security:
-    user:
-        password: ${eureka.password}
+spring:
+    application:
+        name: service-registry
         
 eureka:
   instance: 
-    hostname: localhost
+    hostname: nameless-bayou-22996.herokuapp.com
+    nonSecurePort: 80
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl: 
-        defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  password: ${EUREKA_USER_PASSWORD:password}
+        defaultZone: https://nameless-bayou-22996.herokuapp.com/eureka/
     
