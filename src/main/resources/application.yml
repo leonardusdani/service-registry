@@ -7,8 +7,8 @@ eureka:
     hostname: nameless-bayou-22996.herokuapp.com
     nonSecurePort: 80
   client:
-    registerWithEureka: false
-    fetchRegistry: false
+    registerWithEureka: true
+    fetchRegistry: true
     serviceUrl: 
         defaultZone: https://nameless-bayou-22996.herokuapp.com/eureka/
     
